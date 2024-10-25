@@ -1,20 +1,38 @@
-<!DOCTYPE html>
 <li class="card">
-  <h2 class="card--title">Bulbasaur</h2>
-  <img
-    width="256"
-    class="card--img"
-    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-  />
-  <ul class="card--text">
-    <li>HP: 45</li>
-    <li>ATTACK: 49</li>
-    <li>DEFENSE: 49</li>
-    <li>SPECIAL-ATTACK: 65</li>
-    <li>SPECIAL-DEFENSE: 65</li>
-    <li>SPEED: 45</li>
-  </ul>
-  <ul class="card--appearence">
-    <li>Appeared in</li>
-  </ul>
+  <!-- Improved with ChatGPT: Used figure to group image and title semantically -->
+  <figure class="card--figure">
+    <!-- Improved with ChatGPT: Added descriptive alt text for accessibility -->
+    <img
+      width="256"
+      class="card--img"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"  
+      alt="Image of Bulbasaur" 
+    />
+    <figcaption class="card--title">Bulbasaur</figcaption> <!-- Improved with ChatGPT: Used figcaption for semantic title association with image -->
+  </figure>
+
+  <!-- Improved with ChatGPT: Grouped stats into a section for logical structure and styling -->
+  <section class="card--stats">
+    <h3>Stats</h3> <!-- Improved with ChatGPT: Added heading to clarify section content -->
+    <ul class="card--text">
+      <!-- Improved with ChatGPT: Used strong tags to emphasize stat labels -->
+      <li><strong>HP:</strong> 45</li>
+      <li><strong>Attack:</strong> 49</li>
+      <li><strong>Defense:</strong> 49</li>
+      <li><strong>Special Attack:</strong> 65</li>
+      <li><strong>Special Defense:</strong> 65</li>
+      <li><strong>Speed:</strong> 45</li>
+    </ul>
+  </section>
+
+  <!-- Improved with ChatGPT: Created a separate section for appearances to keep content organized -->
+  <section class="card--appearance">
+    <h3>Appearances</h3> <!-- Improved with ChatGPT: Added heading for clear content structure -->
+    <ul>
+      <li>Appeared in Pokémon Red/Blue</li>
+      <li>Appeared in Pokémon Yellow</li>
+      <!-- Add more appearances if necessary -->
+    </ul>
+  </section>
 </li>
+

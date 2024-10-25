@@ -11,18 +11,15 @@ body {
   display: grid;
   grid-template-columns: minmax(300px, 1200px);
   justify-content: center;
-
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
 }
 
-img {
-  max-width: 100%;
-}
-
-h1,
-h2 {
+h1 {
   text-align: center;
+  font-family: 'Pokemon', sans-serif;
+  color: #333;
 }
 
 .cards {
@@ -30,38 +27,70 @@ h2 {
   grid-template-columns: repeat(auto-fill, 375px);
   gap: 15px;
   justify-content: center;
-  justify-items: center;
-
   padding: 2rem 0;
-  margin-bottom: 2rem;
 }
 
 .card {
   width: 100%;
-  justify-self: center;
-
-  border: 1px solid #252525;
-  border-radius: 8px;
-
-  cursor: pointer;
-  transition: all 300ms;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #f6d55c; /* Border color matching a Pokémon card border */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #ffffff 70%, #f6d55c); /* Light gradient background */
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Arial', sans-serif;
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.card--text {
-  margin: 0.2rem;
-  padding: 1rem;
-
-  border-radius: 5px;
+.card--title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d7263d;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-family: 'Pokemon', sans-serif;
+  letter-spacing: 1px;
 }
 
 .card--img {
   display: block;
   margin: 0 auto;
-
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #252525;
 }
+
+.card--text,
+.card--appearance {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  background-color: rgba(246, 213, 92, 0.2);
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card--text li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card--appearance {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
